@@ -3,11 +3,16 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.db import engine, Base
 from app import models
+from app.api import projects  # Добавить этот импорт
 
 # Создать все таблицы
 Base.metadata.create_all(bind=engine)
 
-app = FastAPI(title="RentInterior API", version="1.0.0")
+app = FastAPI(
+    title="RentInterior API", 
+    version="1.0.0",
+    description="AI-powered furniture selection for rental apartments"
+)
 
 app.add_middleware(
     CORSMiddleware,
@@ -16,6 +21,9 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Подключить роуты
+app.include_router(projects.router)
 
 @app.get("/")
 def read_root():
