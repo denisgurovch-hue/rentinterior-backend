@@ -1,62 +1,47 @@
-from pydantic import BaseModel, ConfigDict
+from pydantic import BaseModel, Field
+from typing import List, Optional
 from datetime import datetime
-from typing import Optional, List
+from app.models import RoomType, StyleType, ProjectStatus, FurnitureCategory
 
+# Request schemas
+class ProjectCreate(BaseModel):
+    room_type: RoomType
+    style: StyleType
+    budget: int = Field(gt=0, description="Бюджет в рублях")
+    city: str = Field(min_length=2, description="Город")
 
-# Project Schemas
-class ProjectBase(BaseModel):
+# Response schemas
+class FurnitureItemResponse(BaseModel):
+    id: int
     name: str
-    description: Optional[str] = None
-    address: Optional[str] = None
+    category: FurnitureCategory
+    price: int
+    shop: str
+    link: str
+    image_url: Optional[str] = None
+    
+    class Config:
+        from_attributes = True
 
-
-class ProjectCreate(ProjectBase):
-    pass
-
-
-class ProjectUpdate(BaseModel):
-    name: Optional[str] = None
-    description: Optional[str] = None
-    address: Optional[str] = None
-
-
-class Project(ProjectBase):
+class ProjectResponse(BaseModel):
     id: int
+    room_type: RoomType
+    style: StyleType
+    budget: int
+    city: str
+    status: ProjectStatus
     created_at: datetime
-    updated_at: Optional[datetime] = None
+    furniture_items: List[FurnitureItemResponse] = []
+    total_cost: int = 0
+    
+    class Config:
+        from_attributes = True
 
-    model_config = ConfigDict(from_attributes=True)
-
-
-# StagingTask Schemas
-class StagingTaskBase(BaseModel):
-    title: str
-    description: Optional[str] = None
-    status: Optional[str] = "pending"
-    is_completed: Optional[bool] = False
-
-
-class StagingTaskCreate(StagingTaskBase):
+class ProjectCreateResponse(BaseModel):
     project_id: int
-
-
-class StagingTaskUpdate(BaseModel):
-    title: Optional[str] = None
-    description: Optional[str] = None
-    status: Optional[str] = None
-    is_completed: Optional[bool] = None
-
-
-class StagingTask(StagingTaskBase):
-    id: int
-    project_id: int
-    created_at: datetime
-    updated_at: Optional[datetime] = None
-
-    model_config = ConfigDict(from_attributes=True)
-
-
-# Project with tasks
-class ProjectWithTasks(Project):
-    staging_tasks: List[StagingTask] = []
-
+    status: ProjectStatus
+    room_type: RoomType
+    style: StyleType
+    budget: int
+    total_cost: int
+    items_count: int

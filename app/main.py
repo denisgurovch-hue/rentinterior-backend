@@ -1,28 +1,26 @@
 from fastapi import FastAPI
-from fastapi.responses import JSONResponse
-from app.db import engine, Base
+from fastapi.middleware.cors import CORSMiddleware
 
-# Create database tables
+from app.db import engine, Base
+from app import models
+
+# Создать все таблицы
 Base.metadata.create_all(bind=engine)
 
-# Create FastAPI app
-app = FastAPI(
-    title="RentInterior API",
-    description="API for RentInterior project management",
-    version="1.0.0"
+app = FastAPI(title="RentInterior API", version="1.0.0")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
-
 @app.get("/")
-async def root():
-    return JSONResponse(
-        content={"message": "Welcome to RentInterior API", "version": "1.0.0"}
-    )
-
+def read_root():
+    return {"message": "Welcome to RentInterior API", "version": "1.0.0"}
 
 @app.get("/health")
-async def health():
-    return JSONResponse(
-        content={"status": "healthy", "service": "RentInterior API"}
-    )
-
+def health_check():
+    return {"status": "ok"}
