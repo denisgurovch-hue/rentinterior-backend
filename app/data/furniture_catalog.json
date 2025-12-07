@@ -1,0 +1,253 @@
+[
+  {
+    "name": "Диван-кровать Вега",
+    "category": "sofa",
+    "room_types": ["living_room"],
+    "styles": ["modern", "minimalist"],
+    "price": 29990,
+    "shop": "Hoff",
+    "link": "https://www.hoff.ru/catalog/mebel/myagkaya_mebel/divany/",
+    "image_url": null
+  },
+  {
+    "name": "Диван угловой Монреаль",
+    "category": "sofa",
+    "room_types": ["living_room"],
+    "styles": ["modern", "scandinavian"],
+    "price": 45990,
+    "shop": "Hoff",
+    "link": "https://www.hoff.ru/catalog/mebel/myagkaya_mebel/divany/",
+    "image_url": null
+  },
+  {
+    "name": "Кровать двуспальная Лайт",
+    "category": "bed",
+    "room_types": ["bedroom"],
+    "styles": ["minimalist", "scandinavian"],
+    "price": 19990,
+    "shop": "Hoff",
+    "link": "https://www.hoff.ru/catalog/mebel/krovati/",
+    "image_url": null
+  },
+  {
+    "name": "Кровать с подъемным механизмом Сити",
+    "category": "bed",
+    "room_types": ["bedroom"],
+    "styles": ["modern", "classic"],
+    "price": 34990,
+    "shop": "Hoff",
+    "link": "https://www.hoff.ru/catalog/mebel/krovati/",
+    "image_url": null
+  },
+  {
+    "name": "Шкаф двухдверный Скандинавия",
+    "category": "wardrobe",
+    "room_types": ["bedroom"],
+    "styles": ["scandinavian", "minimalist"],
+    "price": 24990,
+    "shop": "Hoff",
+    "link": "https://www.hoff.ru/catalog/mebel/shkafy/",
+    "image_url": null
+  },
+  {
+    "name": "Шкаф-купе трехдверный Модерн",
+    "category": "wardrobe",
+    "room_types": ["bedroom"],
+    "styles": ["modern", "classic"],
+    "price": 39990,
+    "shop": "Hoff",
+    "link": "https://www.hoff.ru/catalog/mebel/shkafy/",
+    "image_url": null
+  },
+  {
+    "name": "Тумба прикроватная Лофт",
+    "category": "table",
+    "room_types": ["bedroom"],
+    "styles": ["modern", "minimalist"],
+    "price": 3990,
+    "shop": "Wildberries",
+    "link": "https://www.wildberries.ru/catalog/dom-i-dacha/mebel/spalnya/tumby-prikrovatnye",
+    "image_url": null
+  },
+  {
+    "name": "Комод 4 ящика Классик",
+    "category": "shelving",
+    "room_types": ["bedroom"],
+    "styles": ["classic", "scandinavian"],
+    "price": 12990,
+    "shop": "Ozon",
+    "link": "https://www.ozon.ru/category/komody-10884/",
+    "image_url": null
+  },
+  {
+    "name": "Стол журнальный Норд",
+    "category": "table",
+    "room_types": ["living_room"],
+    "styles": ["scandinavian", "minimalist"],
+    "price": 5990,
+    "shop": "Wildberries",
+    "link": "https://www.wildberries.ru/catalog/dom-i-dacha/mebel/gostinnaya/stoly-zhurnalnye",
+    "image_url": null
+  },
+  {
+    "name": "Стол журнальный Лофт Металл",
+    "category": "table",
+    "room_types": ["living_room"],
+    "styles": ["modern", "minimalist"],
+    "price": 8990,
+    "shop": "Ozon",
+    "link": "https://www.ozon.ru/category/zhurnalnye-stoly-10890/",
+    "image_url": null
+  },
+  {
+    "name": "Стеллаж открытый Куб",
+    "category": "shelving",
+    "room_types": ["living_room"],
+    "styles": ["modern", "scandinavian"],
+    "price": 6990,
+    "shop": "Леруа Мерлен",
+    "link": "https://leroymerlin.ru/catalogue/stellazhi/",
+    "image_url": null
+  },
+  {
+    "name": "Стеллаж книжный Библиотека",
+    "category": "shelving",
+    "room_types": ["living_room"],
+    "styles": ["classic", "scandinavian"],
+    "price": 14990,
+    "shop": "Ангстрем",
+    "link": "https://www.angstrem-mebel.ru/catalog/stellazhi/",
+    "image_url": null
+  },
+  {
+    "name": "Стул обеденный Эко",
+    "category": "chair",
+    "room_types": ["kitchen"],
+    "styles": ["scandinavian", "minimalist"],
+    "price": 3490,
+    "shop": "Wildberries",
+    "link": "https://www.wildberries.ru/catalog/dom-i-dacha/mebel/kuhnya-i-stolovaya/stulya",
+    "image_url": null
+  },
+  {
+    "name": "Стул барный Лофт",
+    "category": "chair",
+    "room_types": ["kitchen"],
+    "styles": ["modern", "minimalist"],
+    "price": 4990,
+    "shop": "Hoff",
+    "link": "https://www.hoff.ru/catalog/mebel/stulya/",
+    "image_url": null
+  },
+  {
+    "name": "Стол обеденный раздвижной Милан",
+    "category": "table",
+    "room_types": ["kitchen"],
+    "styles": ["modern", "classic"],
+    "price": 19990,
+    "shop": "Hoff",
+    "link": "https://www.hoff.ru/catalog/mebel/stoly/",
+    "image_url": null
+  },
+  {
+    "name": "Стол кухонный компактный Норд",
+    "category": "table",
+    "room_types": ["kitchen"],
+    "styles": ["scandinavian", "minimalist"],
+    "price": 8990,
+    "shop": "Ozon",
+    "link": "https://www.ozon.ru/category/obedennye-stoly-10889/",
+    "image_url": null
+  },
+  {
+    "name": "Светильник напольный Скандинавия",
+    "category": "lighting",
+    "room_types": ["living_room", "bedroom"],
+    "styles": ["scandinavian", "modern"],
+    "price": 4990,
+    "shop": "Леруа Мерлен",
+    "link": "https://leroymerlin.ru/catalogue/svetilniki-napolnye/",
+    "image_url": null
+  },
+  {
+    "name": "Люстра потолочная Модерн",
+    "category": "lighting",
+    "room_types": ["living_room", "bedroom"],
+    "styles": ["modern", "minimalist"],
+    "price": 3990,
+    "shop": "Wildberries",
+    "link": "https://www.wildberries.ru/catalog/dom-i-dacha/svet/lyustry",
+    "image_url": null
+  },
+  {
+    "name": "Ковер прямоугольный Уют",
+    "category": "decor",
+    "room_types": ["living_room", "bedroom"],
+    "styles": ["scandinavian", "modern"],
+    "price": 5990,
+    "shop": "Ozon",
+    "link": "https://www.ozon.ru/category/kovry-10595/",
+    "image_url": null
+  },
+  {
+    "name": "Подушки декоративные набор 3шт",
+    "category": "decor",
+    "room_types": ["living_room", "bedroom"],
+    "styles": ["scandinavian", "modern", "minimalist"],
+    "price": 1990,
+    "shop": "Wildberries",
+    "link": "https://www.wildberries.ru/catalog/dom-i-dacha/tekstil/dekorativnye-podushki",
+    "image_url": null
+  },
+  {
+    "name": "Картина на холсте Абстракция",
+    "category": "decor",
+    "room_types": ["living_room", "bedroom"],
+    "styles": ["modern", "minimalist"],
+    "price": 2490,
+    "shop": "Ozon",
+    "link": "https://www.ozon.ru/category/kartiny-39527/",
+    "image_url": null
+  },
+  {
+    "name": "Зеркало настенное Рама",
+    "category": "decor",
+    "room_types": ["bedroom", "living_room"],
+    "styles": ["classic", "scandinavian"],
+    "price": 3990,
+    "shop": "Леруа Мерлен",
+    "link": "https://leroymerlin.ru/catalogue/zerkala/",
+    "image_url": null
+  },
+  {
+    "name": "Полка настенная Куб 3шт",
+    "category": "shelving",
+    "room_types": ["living_room", "bedroom"],
+    "styles": ["minimalist", "modern"],
+    "price": 2990,
+    "shop": "Wildberries",
+    "link": "https://www.wildberries.ru/catalog/dom-i-dacha/mebel/polki-i-stellazhi",
+    "image_url": null
+  },
+  {
+    "name": "Плед флисовый Уют",
+    "category": "decor",
+    "room_types": ["living_room", "bedroom"],
+    "styles": ["scandinavian", "minimalist"],
+    "price": 1490,
+    "shop": "Wildberries",
+    "link": "https://www.wildberries.ru/catalog/dom-i-dacha/tekstil/pledy",
+    "image_url": null
+  },
+  {
+    "name": "Вазон напольный Керамика",
+    "category": "decor",
+    "room_types": ["living_room"],
+    "styles": ["scandinavian", "modern"],
+    "price": 2990,
+    "shop": "Ozon",
+    "link": "https://www.ozon.ru/category/vazy-napolnye-38984/",
+    "image_url": null
+  }
+]
+
